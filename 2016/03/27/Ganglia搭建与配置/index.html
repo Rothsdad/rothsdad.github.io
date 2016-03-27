@@ -12,10 +12,7 @@ Ganglia分三个模块:
 
 ganglia-monitor 即gmond,用来监视结点的资源
 gmetad Ganglia的WebUI后端，轮询接收gmond收集到的信息
-ganglia-webfrontend Ganglia的WebUI前端
-
-
-主节点Mas">
+ganglia-webfrontend Ganglia的WebUI前端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ganglia搭建与配置">
 <meta property="og:url" content="http://yoursite.com/2016/03/27/Ganglia搭建与配置/index.html">
@@ -26,11 +23,8 @@ Ganglia分三个模块:
 
 ganglia-monitor 即gmond,用来监视结点的资源
 gmetad Ganglia的WebUI后端，轮询接收gmond收集到的信息
-ganglia-webfrontend Ganglia的WebUI前端
-
-
-主节点Mas">
-<meta property="og:updated_time" content="2016-03-27T08:16:30.000Z">
+ganglia-webfrontend Ganglia的WebUI前端">
+<meta property="og:updated_time" content="2016-03-27T08:17:36.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ganglia搭建与配置">
 <meta name="twitter:description" content="Ganglia就是集群版的资源监视器，下面就以监视一个搭建在Ubuntu上的Spark集群为例，看下Ganglia是如何搭建与配置的。
@@ -39,10 +33,7 @@ Ganglia分三个模块:
 
 ganglia-monitor 即gmond,用来监视结点的资源
 gmetad Ganglia的WebUI后端，轮询接收gmond收集到的信息
-ganglia-webfrontend Ganglia的WebUI前端
-
-
-主节点Mas">
+ganglia-webfrontend Ganglia的WebUI前端">
   
     <link rel="alternative" href="/atom.xml" title="大锤儿笔记" type="application/atom+xml">
   
@@ -278,6 +269,7 @@ ganglia-webfrontend Ganglia的WebUI前端
 <li><code>ganglia-webfrontend</code> Ganglia的WebUI前端</li>
 </ul>
 </blockquote>
+<a id="more"></a>
 <h3 id="主节点Master配置"><a href="#主节点Master配置" class="headerlink" title="主节点Master配置"></a>主节点Master配置</h3><p>在主节点上安装gmetad, ganglia-webfrontend, ganglia-monitor, 在其它结点上，只需安装ganglia-monitor即可。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install gmetad ganglia-webfrontend ganglia-monitor</span><br></pre></td></tr></table></figure>
 <p>将Ganglia的配置复制到Apache的目录下:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cp /etc/ganglia-webfrontend/apache.conf /etc/apache2/sites-enabled/ganglia.conf</span><br></pre></td></tr></table></figure></p>
